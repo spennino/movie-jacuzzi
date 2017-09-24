@@ -1,0 +1,10 @@
+<div class="search-bar">
+  <form ng-submit="search()">
+    <input type="text" ng-model="searchQuery" placeholder="Search movie titles..." />
+  </form>
+</div>
+
+<div ng-show="searchResults">
+  <h2>Search Results for "{{ completedQuery }}"</h2>
+  <movies-list movies="searchResults" page="page" total-pages="totalPages"></movies-list>
+</div>

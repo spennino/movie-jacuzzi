@@ -1,0 +1,13 @@
+<div class="movies-list-container">
+  <div ng-repeat="movie in vm.movies" class="movies-list-item">
+    <img class="movie-poster-img" src="{{ movie.posterUrl }}">
+    <a ui-sref="moviePage({ movieId: {{ movie.id }} })">
+      <div class="movie-img-hover">
+        <div class="movie-img-hover-text">
+          <h3>{{ movie.title }}</h3>
+          <p>{{ movie.overview | limitTo:125 }}...</p>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>

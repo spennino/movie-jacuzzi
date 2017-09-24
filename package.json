@@ -1,0 +1,22 @@
+{
+  "name": "movie-jacuzzi",
+  "version": "1.0.0",
+  "description": "A hot tubbin' movie finder",
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha"
+  },
+  "author": "Sean Pennino",
+  "dependencies": {
+    "angular": "^1.6.6",
+    "angular-resource": "^1.6.6",
+    "body-parser": "^1.18.1",
+    "chai": "^4.1.2",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.4",
+    "https": "^1.0.0",
+    "mocha": "^3.5.3",
+    "nock": "^9.0.19",
+    "request": "^2.81.0"
+  }
+}

@@ -1,0 +1,18 @@
+<div class="movie-page-container">
+  <div class="movie-page-background-img">
+    <img src="{{ movie.backdropUrl }}" class="backdrop-img">
+  </div>
+  <div class="movie-page-background-vignette">
+  </div>
+  <div class="movie-page-content" ng-show="movie">
+    <h2> {{ movie.title }} </h2>
+    <p>
+      <span>Rating:</span> {{ movie.voteAverage }} / 10</br></br>
+      <span>Release Date:</span> {{ movie.releaseDate | date : 'MMMM d, yyyy'}}</br></br>
+      <span>Overview:</span> {{ movie.overview }}</br>
+    </p>
+  </div>
+</div>
+<div class="movie-page-recommendations">
+  <recommended-movies movie-id="movieId"></recommended-movies>
+</div>

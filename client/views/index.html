@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="movieJacuzzi">
+  <head>
+    <meta charset="utf-8">
+    <title>Movie Jacuzzi</title>
+    <meta id="meta" name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/client/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="top-nav">
+      <a ui-sref="homePage()"><h1> Movie Jacuzzi</h1></a>
+    </div>
+    <ui-view></ui-view>
+    <div id="footer">
+      <img src="/client/img/powered-by-tmdb.svg">
+    </div>
+    <script src="/node_modules/angular/angular.js"></script>
+    <script src="/node_modules/angular-resource/angular-resource.js"></script>
+    <script src="//unpkg.com/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="/client/app.js"></script>
+    <script type="text/javascript" src="/client/controllers/popular-movies-controller.js"></script>
+    <script type="text/javascript" src="/client/controllers/search-movies-controller.js"></script>
+    <script type="text/javascript" src="/client/controllers/movie-page-controller.js"></script>
+    <script type="text/javascript" src="/client/controllers/recommended-movies-controller.js"></script>
+    <script type="text/javascript" src="/client/components/popular-movies-component.js"></script>
+    <script type="text/javascript" src="/client/components/seach-movies-component.js"></script>
+    <script type="text/javascript" src="/client/components/movies-list-component.js"></script>
+    <script type="text/javascript" src="/client/components/recommended-movies-component.js"></script>
+  </body>
+</html>
