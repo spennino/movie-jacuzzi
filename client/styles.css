@@ -160,3 +160,41 @@ input[type="text"]:focus {
 .movie-page-recommendations {
   padding-left: 5%;
 }
+
+@-webkit-keyframes pulse {
+  50% {
+    background: white;
+  }
+}
+.loading-pulse {
+  margin: 0 auto;
+  position: relative;
+  width: 0.3vw;
+  height: 1.5vw;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-animation: pulse 750ms infinite;
+          animation: pulse 750ms infinite;
+  -webkit-animation-delay: 250ms;
+          animation-delay: 250ms;
+}
+.loading-pulse:before, .loading-pulse:after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 1vw;
+  width: 0.3vw;
+  background: rgba(255, 255, 255, 0.2);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-animation: pulse 750ms infinite;
+          animation: pulse 750ms infinite;
+}
+.loading-pulse:before {
+  left: -0.6vw;
+}
+.loading-pulse:after {
+  left: 0.6vw;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
